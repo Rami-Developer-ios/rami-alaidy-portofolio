@@ -20,7 +20,7 @@ struct ProtofolioController: RouteCollection{
         
         route.post(use: {try await create(req: $0)})
         
-        route.put("update", use: {try await update(req: $0)})
+        route.put("update",":IDuser", use: {try await update(req: $0)})
         
         /// Route Add Profile Picture
         route.get("addProfilePicture",use: {try await addProfilePictureHandler($0)})
@@ -41,7 +41,7 @@ struct ProtofolioController: RouteCollection{
     }
     func update(req:Request) async throws -> ProtofolioModel{
         
-        guard let ProtofolioID = try await ProtofolioModel.find(req.parameters.get("id"), on: req.db) else{
+        guard let ProtofolioID = try await ProtofolioModel.find(req.parameters.get("IDuser"), on: req.db) else{
             throw Abort(.notFound)
         }
         let updateData = try req.content.decode(ProtofolioModel.self)

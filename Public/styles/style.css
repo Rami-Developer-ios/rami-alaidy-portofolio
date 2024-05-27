@@ -116,13 +116,13 @@ h6 {
   padding-bottom: 6px;
   color: #18d26e;
 }
-#header h4 span {
-  font-size-adjust:36px;
-  color: #18d26e;
-  border-bottom: 2px;
-  padding-bottom: 6px;
-  color: #18d26e;
-}
+/*#header h4 span {*/
+/*  font-size-adjust:36px;*/
+/*  color: #18d26e;*/
+/*  border-bottom: 2px;*/
+/*  padding-bottom: 6px;*/
+/*  color: #18d26e;*/
+/*}*/
 /*#header h4 span{*/
 /*    font-size-adjust:64px;*/
 /*    color: #fff;*/
@@ -548,7 +548,7 @@ section .container {
 
 .skills .progress-bar {
   width: 1px;
-  height: 10px;
+  height: 5px;
   transition: 0.9s;
   background-color: #18d26e;
 }
