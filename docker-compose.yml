@@ -69,6 +69,6 @@ services:
       PGDATA: /var/lib/postgresql/data/pgdata
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: r315r199r
-      POSTGRES_DB: Protofolio
+      POSTGRES_DB: postgres-CP
     ports:
       - '5432:5432'
